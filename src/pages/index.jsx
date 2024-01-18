@@ -14,19 +14,15 @@ import {
 
 export default function Home() {
   return (
-    <div className="container *:justify-items-center">
-      <div className="bg-red-200 text-center font-semibold hover:bg-red-700">
-        {" "}
-        New project
-      </div>
+    <div className="container w-[1440px] bg-white p-5 ">
       <Header></Header>
       <Profile> </Profile>
       <About></About>
-      <Skill></Skill>
+      {/* <Skill></Skill>
       <Experience></Experience>
       <Projects></Projects>
       <Contact></Contact>
-      <Footer></Footer>
+      <Footer></Footer> */}
     </div>
   );
 }
