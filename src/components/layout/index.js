@@ -4,5 +4,5 @@ export * from "./Contact";
 export * from "./Profile";
 export * from "./Footer";
 export * from "./Skill";
-export * from "./Projects";
+export * from "./Work";
 export * from "./Experience";

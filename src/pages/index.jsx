@@ -8,7 +8,7 @@ import {
   Skill,
   Footer,
   Contact,
-  Projects,
+  Work,
   Experience,
 } from "../components/layout/index";
 
@@ -19,11 +19,10 @@ export default function Home() {
       <Profile> </Profile>
       <About></About>
       <Skill></Skill>
-
-      {/* <Experience></Experience> */}
-      {/* <Projects></Projects>
+      <Experience></Experience>
+      <Work></Work>
       <Contact></Contact>
-      <Footer></Footer> */}
+      <Footer></Footer>
     </div>
   );
 }
