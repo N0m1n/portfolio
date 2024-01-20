@@ -2,9 +2,9 @@ export const Profile = () => {
   return (
     <div className="py-20 px-24 border w-full">
       <div className="py-8 gap-12  flex flex-row">
-        <div className="col-1 w-full flex flex-col gap-12">
+        <div className="col-1 w-full flex flex-col gap-12 *:text-gray-600">
           <div className="w-full flex flex-col gap-2">
-            <h1 className="text-6xl font-bold">Hi, I’m Nomin 👋 </h1>
+            <h1 className="text-6xl font-bold text-black">Hi, I’m Nomin 👋 </h1>
             <p className="text-base w-[786px] text-justify">
               m a full stack developer (React.js & Node.js) with a focus on
               creating (and occasionally designing) exceptional digital
@@ -32,7 +32,7 @@ export const Profile = () => {
         </div>
         <div className="relative z-10">
           <img className="size-72 " src="/avatar.png" alt="" />
-          <div className="size-72 absolute left-[40px] top-[40px] bg-gray-200 -z-10"></div>
+          <div className="size-72 absolute left-[20px] top-[20px] bg-gray-200 -z-10"></div>
         </div>
       </div>
     </div>

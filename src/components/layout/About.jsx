@@ -1,8 +1,11 @@
 export const About = () => {
   return (
     <div className="py-20 px-14 border flex flex-col gap-12  bg-gray-50">
-      <div className="bg-white">
-        <button className="flex justify-center place-content-center py-1 px-5 text-black rounded-xl bg-gray-600">
+      <div className="flex justify-center ">
+        <button
+          className=" py-1 px-5 text-black rounded-xl bg-gray-200
+        "
+        >
           About Me
         </button>
       </div>
@@ -16,13 +19,14 @@ export const About = () => {
             Curious about me? Here you have it:
           </h2>
 
-          <div className=" w-full flex flex-col *:text-base *:text-justify  mt-6 gap-4">
+          <div className=" w-full flex flex-col *:text-base *:text-justify *:text-gray-600 mt-6 gap-4 selection:underline-offset-8 ">
             <p>
-              I'm a passionate, self-proclaimed designer who specializes in full
-              stack development (React.js & Node.js). I am very enthusiastic
-              about bringing the technical and visual aspects of digital
-              products to life. User experience, pixel perfect design, and
-              writing clear, readable, highly performant code matters to me.
+              I'm a passionate, <em> self-proclaimed designer</em> who
+              specializes in full stack development (React.js & Node.js). I am
+              very enthusiastic about bringing the technical and visual aspects
+              of digital products to life. User experience, pixel perfect
+              design, and writing clear, readable, highly performant code
+              matters to me.
             </p>
 
             <p>
@@ -45,8 +49,17 @@ export const About = () => {
               Twitter where I share tech-related bites and build in public, or
               you can follow me on GitHub.
             </p>
-
-            
+            <p>Finally, some quick bits about me.</p>
+            <ul className="list-disc grid grid-cols-2  ml-4">
+              <li>B.E. in Computer Engineering</li>
+              <li>Full time freelancer</li>
+              <li>Avid learner</li>
+              <li>Aspiring indie hacker</li>
+            </ul>
+            <p>
+              One last thing, I'm available for freelance work, so feel free to
+              reach out and say hello! I promise I don't bite 😉
+            </p>
           </div>
         </div>
       </div>

@@ -18,9 +18,10 @@ export default function Home() {
       <Header></Header>
       <Profile> </Profile>
       <About></About>
-      {/* <Skill></Skill>
-      <Experience></Experience>
-      <Projects></Projects>
+      <Skill></Skill>
+
+      {/* <Experience></Experience> */}
+      {/* <Projects></Projects>
       <Contact></Contact>
       <Footer></Footer> */}
     </div>
