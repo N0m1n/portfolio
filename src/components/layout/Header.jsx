@@ -1,4 +1,10 @@
+import useDownloader from "react-use-downloader";
+
 export const Header = () => {
+  const { download } = useDownloader();
+
+  // const fileUrl = "/";
+  // const fileName = " .pdf";
   return (
     <div className="flex flex-row place-content-between bg-white border py-4 px-20 ">
       <h2 className=" font-semibold">SS</h2>
@@ -8,12 +14,9 @@ export const Header = () => {
         <li>Testimonals</li>
         <li>Contact</li>
         <li>
-          <img
-            src="/icon.png"
-            alt=""
-          />
+          <img src="/icon.png" alt="" />
         </li>
-        <button className="rounded-full bg-black px-4 text-white">
+        <button className="rounded-full bg-black px-4 text-white" >
           Download CV
         </button>
       </ul>

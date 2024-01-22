@@ -1,4 +1,5 @@
 import { TechCard } from "../ui/TechnologyCards";
+import { ButtonLink } from "../ui/Button";
 
 const TechCards = [
   {
@@ -69,21 +70,22 @@ const TechCards = [
 
 export const Skill = () => {
   return (
-    <div className="py-20 px-14 border flex flex-col items-center gap-12  bg-gray-50">
-      <div className="">
-        <div className=" flex  justify-center">
-          <button className="text-center py-1 px-5 text-black rounded-xl bg-gray-200">
+    <div className="py-24 px-20 border flex flex-col items-center gap-12  bg-gray-50">
+      <div className=" ">
+        <div className=" flex justify-center">
+          <ButtonLink Button={"Skill"}></ButtonLink>
+          {/* <button className="text-center py-1 px-5 text-black rounded-xl bg-gray-200">
             Skills
-          </button>
+          </button> */}
         </div>
         <h2 className=" flex justify-center text-xl text-gray-600 mt-4">
           The skills, tools and technologies I am really good at:
         </h2>
-        <div className="grid max-w-md:grid-cols-3 md:grid-cols-8 mt-12 gap-12 gap-y-12 justify-center">
-          {TechCards.map((el) => (
-            <TechCard logo={el.cardLogo} name={el.cardName}></TechCard>
-          ))}
-        </div>
+      </div>
+      <div className="grid max-w-md:grid-cols-3 md:grid-cols-8 mt-12 gap-12 gap-y-12 justify-center">
+        {TechCards.map((el) => (
+          <TechCard logo={el.cardLogo} name={el.cardName}></TechCard>
+        ))}
       </div>
     </div>
   );

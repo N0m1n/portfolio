@@ -9,9 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "-": "^0.0.1",
+    "install": "^0.13.0",
+    "next": "14.0.4",
+    "npm": "^10.3.0",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.0.4"
+    "react-use-downloader": "^1.2.4",
+    "user": "^0.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",

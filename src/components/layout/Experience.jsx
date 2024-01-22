@@ -1,4 +1,5 @@
 import { PositionTitles } from "../ui/Positions";
+import { ButtonLink } from "../ui/Button";
 
 const positionDetials = [
   {
@@ -37,15 +38,17 @@ const positionDetials = [
 
 export const Experience = () => {
   return (
-    <div className="py-20 px-14 border flex flex-col items-center gap-12  bg-gray-50">
-      <div className=" flex  justify-center">
-        <button className="text-center py-1 px-5 text-black rounded-xl bg-gray-200">
+    <div className="py-24 px-20  border flex flex-col  gap-12  bg-gray-50">
+      <div className=" flex flex-col gap-4 items-center">
+        <ButtonLink Button={"Experience"}></ButtonLink>
+        {/* <button className="text-center py-1 px-5 text-black rounded-xl bg-gray-200">
           Experience
-        </button>
+        </button> */}
+
+        <h2 className=" flex justify-center text-xl text-gray-600">
+          Here is a quick summary of my most recent experiences
+        </h2>
       </div>
-      <h2 className=" flex justify-center text-xl text-gray-600 mt-4">
-        Here is a quick summary of my most recent experiences
-      </h2>
 
       <div className="flex flex-col gap-y-12 ">
         {positionDetials.map((el) => (

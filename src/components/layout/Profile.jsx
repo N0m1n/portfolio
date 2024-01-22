@@ -1,6 +1,6 @@
 export const Profile = () => {
   return (
-    <div className="py-20 px-24 border w-full">
+    <div className="py-24 px-20 border w-full">
       <div className="py-8 gap-12  flex flex-row">
         <div className="col-1 w-full flex flex-col gap-12 *:text-gray-600">
           <div className="w-full flex flex-col gap-2">

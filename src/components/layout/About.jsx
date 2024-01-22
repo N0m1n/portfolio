@@ -1,13 +1,16 @@
+import { ButtonLink } from "../ui/Button";
+
 export const About = () => {
   return (
-    <div className="py-20 px-14 border flex flex-col gap-12  bg-gray-50">
+    <div className="py-24 px-20  border flex flex-col gap-12  bg-gray-50">
       <div className="flex justify-center ">
-        <button
+        <ButtonLink Button={"About Me"}></ButtonLink>
+        {/* <button
           className=" py-1 px-5 text-black rounded-xl bg-gray-200
         "
         >
           About Me
-        </button>
+        </button> */}
       </div>
 
       <div className="w-full grid grid-cols-2 gap-12 py-8">
