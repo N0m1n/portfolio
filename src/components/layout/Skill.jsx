@@ -70,7 +70,7 @@ const TechCards = [
 
 export const Skill = () => {
   return (
-    <div className="py-24 px-20 border flex flex-col items-center gap-12  bg-gray-50">
+    <div className="sm:py-24 sm:px-20 py-16 px-4 border flex flex-col items-center gap-12  bg-gray-50">
       <div className=" ">
         <div className=" flex justify-center">
           <ButtonLink Button={"Skill"}></ButtonLink>
@@ -82,7 +82,7 @@ export const Skill = () => {
           The skills, tools and technologies I am really good at:
         </h2>
       </div>
-      <div className="grid max-w-md:grid-cols-3 md:grid-cols-8 mt-12 gap-12 gap-y-12 justify-center">
+      <div className="grid grid-cols-3 sm:grid-cols-8 mt-12 gap-12 gap-y-12 justify-center">
         {TechCards.map((el) => (
           <TechCard logo={el.cardLogo} name={el.cardName}></TechCard>
         ))}

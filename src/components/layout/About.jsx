@@ -1,8 +1,13 @@
+import { forwardRef } from "react";
 import { ButtonLink } from "../ui/Button";
 
-export const About = () => {
+export const About = ({ aboutRef }) => {
+  console.log(aboutRef);
   return (
-    <div className="py-24 px-20  border flex flex-col gap-12  bg-gray-50">
+    <div
+      ref={aboutRef}
+      className="sm:py-24 sm:px-20 py-16 px-4  border flex flex-col  gap-12  bg-gray-50"
+    >
       <div className="flex justify-center ">
         <ButtonLink Button={"About Me"}></ButtonLink>
         {/* <button
@@ -13,12 +18,16 @@ export const About = () => {
         </button> */}
       </div>
 
-      <div className="w-full grid grid-cols-2 gap-12 py-8">
+      <div className="w-full sm:grid grid-cols-2  flex flex-col gap-12 py-8">
         <div className="w-ful">
-          <img className="size-96" src="/avatar.png" alt="" />
+          <img
+            className=" border-8 border-white sm:size-96 flex flex-col justify-center sm:justify-start size-72"
+            src="/avatar.png"
+            alt=""
+          />
         </div>
         <div>
-          <h2 className="text-3xl font-semibold ">
+          <h2 className="sm:text-3xl text-2xl font-semibold ">
             Curious about me? Here you have it:
           </h2>
 

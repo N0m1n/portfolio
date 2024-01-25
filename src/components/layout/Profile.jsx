@@ -1,11 +1,13 @@
 export const Profile = () => {
   return (
-    <div className="py-24 px-20 border w-full">
-      <div className="py-8 gap-12  flex flex-row">
-        <div className="col-1 w-full flex flex-col gap-12 *:text-gray-600">
+    <div className="sm:py-24 sm:px-20  w-full py-16 px-4">
+      <div className="sm:py-8 gap-12 w-full flex sm:flex-row flex-col-reverse">
+        <div className="col-1 w-full flex flex-col gap-12 *:text-gray-600 *:dark:text-white">
           <div className="w-full flex flex-col gap-2">
-            <h1 className="text-6xl font-bold text-black">Hi, I’m Nomin 👋 </h1>
-            <p className="text-base w-[786px] text-justify">
+            <h1 className="sm:text-6xl text-4xl font-bold dark:text-white text-black">
+              Hi, I’m Nomin 👋{" "}
+            </h1>
+            <p className="text-base w-full text-justify">
               m a full stack developer (React.js & Node.js) with a focus on
               creating (and occasionally designing) exceptional digital
               experiences that are fast, accessible, visually appealing, and
@@ -25,14 +27,18 @@ export const Profile = () => {
             </div>
           </div>
           <div className="flex flex-row gap-4">
-            <img src="/twittericon.png" alt="" />
+            <img className="dark:white" src="/twittericon.png" alt="" />
             <img src="/giticon.png" alt="" />
             <img src="/figmaicon.png" alt="" />
           </div>
         </div>
-        <div className="relative z-10">
-          <img className="size-72 " src="/avatar.png" alt="" />
-          <div className="size-72 absolute left-[20px] top-[20px] bg-gray-200 -z-10"></div>
+        <div className="relative z-10 flex justify-center">
+          <img
+            className=" border-8 border-white sm:size-72 size-60"
+            src="/avatar.png"
+            alt=""
+          />
+          {/* <div className="size-72 absolute left-[5px] top-[5px] bg-gray-200 -z-10"></div> */}
         </div>
       </div>
     </div>

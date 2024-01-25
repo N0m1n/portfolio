@@ -6,7 +6,6 @@ export const TechCard = (props) => {
         className="text-lg text-gray-600 text-center
       "
       >
-        {" "}
         {props.name}
       </p>
     </div>

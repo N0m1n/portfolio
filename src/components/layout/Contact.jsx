@@ -1,6 +1,9 @@
-export const Contact = () => {
+export const Contact = ({ contactRef }) => {
   return (
-    <div className="py-20 px-14 border flex flex-col items-center gap-12  bg-gray-50">
+    <div
+      ref={contactRef}
+      className="sm:py-24 sm:px-20 py-16 px-4 border flex flex-col gap-12  bg-gray-50"
+    >
       <div className=" flex flex-col justify-center gap-12">
         <div className=" flex  justify-center">
           <button className="text-center py-1 px-5 text-black rounded-xl bg-gray-200">
@@ -15,13 +18,13 @@ export const Contact = () => {
 
         <div className=" flex flex-row  gap-5 justify-center">
           <img src="/email-icon.png" alt="" />
-          <p className="text-4xl  text-gray-900">reachsagarshah@gmail.com</p>
+          <p className="sm:text-4xl text-lg  text-gray-900">reachsagarshah@gmail.com</p>
           <img src="/contact-icon.png" alt="" />
         </div>
 
         <div className=" flex flex-row  gap-5 justify-center">
           <img src="/phone-icon.png" alt="" />
-          <p className="text-4xl text-gray-900">+91 8980500565</p>
+          <p className="sm:text-4xl text-lg text-gray-900">+91 8980500565</p>
           <img src="/contact-icon.png" alt="" />
         </div>
 

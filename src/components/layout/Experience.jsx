@@ -30,15 +30,17 @@ const positionDetials = [
     duties: {
       duties1:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      duties2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     date: "Dec 2015 - May 2017",
   },
 ];
 
-export const Experience = () => {
+export const Experience = ({ expRef }) => {
   return (
-    <div className="py-24 px-20  border flex flex-col  gap-12  bg-gray-50">
+    <div
+      ref={expRef}
+      className="sm:py-24 sm:px-20 py-16 px-4 border flex flex-col  gap-12  bg-gray-50"
+    >
       <div className=" flex flex-col gap-4 items-center">
         <ButtonLink Button={"Experience"}></ButtonLink>
         {/* <button className="text-center py-1 px-5 text-black rounded-xl bg-gray-200">

@@ -17,9 +17,9 @@ const projectDetials = [
   },
 ];
 
-export const Work = () => {
+export const Work = ({ workRef }) => {
   return (
-    <div className="py-24 px-20 border">
+    <div ref={workRef} className="sm:py-24 sm:px-20 py-16 px-4  border">
       <div className=" flex  justify-center">
         <button className="text-center py-1 px-5 text-black rounded-xl bg-gray-200">
           Work

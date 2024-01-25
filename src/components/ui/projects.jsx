@@ -2,8 +2,8 @@ import { SkillButton, SkillSet } from "../ui/SkillButton";
 
 export const Projects = (props) => {
   return (
-    <div className="grid grid-cols-2 py-20 px-14 " > 
-      <div>
+    <div className="sm:grid grid-cols-2  flex flex-col  p-8 sm:py-20 sm:px-14 ">
+      <div className="bg-gray-100 rounded-xl">
         <img
           className="flex justify-center  p-12 rounded-xl h-[384px] w-[100%]"
           src={props.screenshot}
@@ -11,7 +11,9 @@ export const Projects = (props) => {
         />
       </div>
       <div className="p-12 gap-y-6  rounded-xl">
-        <h1 className="text-lg text-gray-600 text-center ">{props.name}</h1>
+        <h1 className="text-lg sm:text-xl text-gray-900 text-center ">
+          {props.name}
+        </h1>
 
         <p className="text-base">{props.detail}</p>
 
