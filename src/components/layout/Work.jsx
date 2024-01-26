@@ -19,13 +19,13 @@ const projectDetials = [
 
 export const Work = ({ workRef }) => {
   return (
-    <div ref={workRef} className="sm:py-24 sm:px-20 py-16 px-4  border">
+    <div ref={workRef} className="sm:py-24 sm:px-20 py-16 px-4 ">
       <div className=" flex  justify-center">
         <button className="text-center py-1 px-5 text-black rounded-xl bg-gray-200">
           Work
         </button>
       </div>
-      <h2 className=" flex justify-center text-xl text-gray-600 mt-4">
+      <h2 className=" flex justify-center text-xl text-gray-600 dark:text-gray-300 mt-4">
         Here is a quick summary of my most recent experiences
       </h2>
       <div>

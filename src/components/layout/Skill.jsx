@@ -70,7 +70,7 @@ const TechCards = [
 
 export const Skill = () => {
   return (
-    <div className="sm:py-24 sm:px-20 py-16 px-4 border flex flex-col items-center gap-12  bg-gray-50">
+    <div className="md:py-24 md:px-20 py-16 px-4 flex flex-col items-center gap-12  bg-white dark:bg-gray-950">
       <div className=" ">
         <div className=" flex justify-center">
           <ButtonLink Button={"Skill"}></ButtonLink>
@@ -78,11 +78,11 @@ export const Skill = () => {
             Skills
           </button> */}
         </div>
-        <h2 className=" flex justify-center text-xl text-gray-600 mt-4">
+        <h2 className=" flex justify-center text-xl text-gray-600 mt-4 dark:text-gray-50">
           The skills, tools and technologies I am really good at:
         </h2>
       </div>
-      <div className="grid grid-cols-3 sm:grid-cols-8 mt-12 gap-12 gap-y-12 justify-center">
+      <div className="grid grid-cols-3 sm:grid-cols-8 mt-12 gap-12 gap-y-12 place-items-center  dark:text-gray-300 ">
         {TechCards.map((el) => (
           <TechCard logo={el.cardLogo} name={el.cardName}></TechCard>
         ))}

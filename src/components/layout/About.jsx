@@ -6,7 +6,7 @@ export const About = ({ aboutRef }) => {
   return (
     <div
       ref={aboutRef}
-      className="sm:py-24 sm:px-20 py-16 px-4  border flex flex-col  gap-12  bg-gray-50"
+      className="sm:py-24 sm:px-20 py-16 px-4  flex flex-col  gap-12  bg-gray-50 dark:bg-gray-900"
     >
       <div className="flex justify-center ">
         <ButtonLink Button={"About Me"}></ButtonLink>
@@ -27,11 +27,11 @@ export const About = ({ aboutRef }) => {
           />
         </div>
         <div>
-          <h2 className="sm:text-3xl text-2xl font-semibold ">
+          <h2 className="sm:text-3xl text-2xl font-semibold  dark:text-gray-50">
             Curious about me? Here you have it:
           </h2>
 
-          <div className=" w-full flex flex-col *:text-base *:text-justify *:text-gray-600 mt-6 gap-4 selection:underline-offset-8 ">
+          <div className=" w-full flex flex-col *:text-base *:text-justify *:text-gray-600  *:dark:text-gray-300 mt-6 gap-4 selection:underline-offset-8 ">
             <p>
               I'm a passionate, <em> self-proclaimed designer</em> who
               specializes in full stack development (React.js & Node.js). I am

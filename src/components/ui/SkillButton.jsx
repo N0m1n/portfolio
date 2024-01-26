@@ -11,7 +11,9 @@ export const SkillSet = (skills) => {
   return (
     <div className="flex  flex-wrap gap-4">
       {str.map((el) => (
-        <button className="bg-gray-200 rounded-xl px-5 py-1">{el}</button>
+        <button className="bg-gray-200 dark:bg-gray-700  dark:text-gray-300 rounded-xl px-5 py-1">
+          {el}
+        </button>
       ))}
     </div>
   );

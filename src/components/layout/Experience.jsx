@@ -39,7 +39,7 @@ export const Experience = ({ expRef }) => {
   return (
     <div
       ref={expRef}
-      className="sm:py-24 sm:px-20 py-16 px-4 border flex flex-col  gap-12  bg-gray-50"
+      className="sm:py-24 sm:px-20 py-16 px-4  flex flex-col  gap-12  bg-gray-50 dark:bg-gray-900"
     >
       <div className=" flex flex-col gap-4 items-center">
         <ButtonLink Button={"Experience"}></ButtonLink>
@@ -47,7 +47,7 @@ export const Experience = ({ expRef }) => {
           Experience
         </button> */}
 
-        <h2 className=" flex justify-center text-xl text-gray-600">
+        <h2 className=" flex justify-center text-xl text-gray-600 dark:text-gray-300">
           Here is a quick summary of my most recent experiences
         </h2>
       </div>

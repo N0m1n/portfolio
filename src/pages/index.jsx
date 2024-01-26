@@ -1,6 +1,4 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 
 import {
   Header,
@@ -18,18 +16,6 @@ export default function Home() {
   const expRef = useRef(null);
   const workRef = useRef(null);
   const contactRef = useRef(null);
-
-  const [isDarkMode, setDarkMode] = useState(false);
-
-  useEffect(() => {
-    const isDark = localStorage.getItem("darkMode") === "true";
-    setDarkMode(isDark);
-  }, []);
-
-  useEffect(() => {
-    document.documentElement.classList.toggle("dark", isDarkMode);
-    localStorage.getItem("darkMode", isDarkMode);
-  }, [isDarkMode]);
 
   const handleClick = () => {
     aboutRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -50,11 +36,7 @@ export default function Home() {
 
   console.log(contactRef);
   return (
-    <div className="container mx-auto dark:bg-gray-900 sm:w-[1440px] w-[343px]flex flex-col justify-center bg-white p-5 ">
-      {/* <button onClick={() => setDarkMode((prevState) => !prevState)}>
-        dark mode button
-      </button> */}
-
+    <div className="container mx-auto dark:bg-gray-950 sm:w-[1440px] w-[343px]flex flex-col justify-center bg-white p-5 ">
       <Header
         handleClick={handleClick}
         expClick={expClick}

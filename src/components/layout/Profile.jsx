@@ -2,9 +2,9 @@ export const Profile = () => {
   return (
     <div className="sm:py-24 sm:px-20  w-full py-16 px-4">
       <div className="sm:py-8 gap-12 w-full flex sm:flex-row flex-col-reverse">
-        <div className="col-1 w-full flex flex-col gap-12 *:text-gray-600 *:dark:text-white">
+        <div className="col-1 w-full flex flex-col gap-12 *:text-gray-600 *:dark:text-gray-300">
           <div className="w-full flex flex-col gap-2">
-            <h1 className="sm:text-6xl text-4xl font-bold dark:text-white text-black">
+            <h1 className="sm:text-6xl text-4xl font-bold dark:text-gray-50 text-black">
               Hi, I’m Nomin 👋{" "}
             </h1>
             <p className="text-base w-full text-justify">
@@ -32,7 +32,7 @@ export const Profile = () => {
             <img src="/figmaicon.png" alt="" />
           </div>
         </div>
-        <div className="relative z-10 flex justify-center">
+        <div className=" flex justify-center">
           <img
             className=" border-8 border-white sm:size-72 size-60"
             src="/avatar.png"
